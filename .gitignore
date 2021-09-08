@@ -4,8 +4,8 @@
 logs
 **/*.backup.*
 **/*.back.*
-build
-dist
+/build
+/dist
 
 node_modules
 bower_components

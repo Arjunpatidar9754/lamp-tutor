@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from 'react';
-import { Switch, Route, Redirect, useLocation } from 'react-router-dom';
+import { Switch, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 
 import { ThemeProvider } from '@material-ui/styles';
@@ -83,10 +83,9 @@ const Routes = () => {
             </div>
           }>
           <Switch>
-            <Redirect exact from="/" to="/home" />
-
             <Route
               path={[
+                '/',
                 '/home',
                 '/html',
                 '/Html_overview',
@@ -146,6 +145,10 @@ const Routes = () => {
                     exit="out"
                     variants={pageVariants}
                     transition={pageTransition}>
+                    <Route
+                      path="/"
+                      component={Home}
+                    />
                     <Route
                       path="/home"
                       component={Home}
