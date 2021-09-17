@@ -53,11 +53,16 @@
 .home_intro img {
     padding-top: 5%;
     padding-bottom: 10%;
+    
 }
+
+
 
 @media screen and (max-width: 480px) {
     .paper p {
-        padding-right: 45px;
-        
+        padding-right: 45px;   
+    }
+    .home_intro img{
+        width: 280px;
     }
 }

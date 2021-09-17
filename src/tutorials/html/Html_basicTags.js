@@ -290,7 +290,7 @@ export default function Html_basicTags() {
           <Link to='/Html_overview'>
             <span style={{padding: '7px 15px', borderRadius: '20px', backgroundColor: '#000a2e', color: 'white', fontWeight: 'bold'}}>Previous</span>
           </Link> 
-          <Link to='/Html_basicTags' >
+          <Link to='/Html_elements' >
           <span style={{margin: '2px 30vw', padding: '7px 15px', borderRadius: '20px', backgroundColor: '#000a2e', color: 'white', fontWeight: 'bold'}}>Next</span>
           </Link>
       </div>

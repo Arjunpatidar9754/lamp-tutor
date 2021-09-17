@@ -49,7 +49,7 @@ const Header = props => {
               title="LAMP Learning HomePage">
               <Link to="/home" className="app-logo-link">
               <img
-                style={{width: '200px'}}
+                style={{width: '140px', marginRight: '-5px'}}
                 alt="LAMP Learning"
                 src={projectLogo}
               />

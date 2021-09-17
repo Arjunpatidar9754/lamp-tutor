@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from 'react';
-import { Switch, Route, useLocation } from 'react-router-dom';
+import { Switch, Route, Redirect, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 
 import { ThemeProvider } from '@material-ui/styles';
@@ -9,6 +9,8 @@ import MuiTheme from './theme';
 // Layout Blueprints
 
 import { LeftSidebar } from './layout-blueprints';
+import lamp_logo from './assets/images/lamp_logo.png';
+import CodeEditor from 'tutorials/CodeExamples/CodeEditor';
 
 // Example Pages
 
@@ -78,14 +80,15 @@ const Routes = () => {
           fallback={
             <div className="d-flex align-items-center vh-100 justify-content-center text-center font-weight-bold font-size-lg py-3">
               <div className="w-50 mx-auto">
-                Please wait while we load the live.
+                <img src={lamp_logo} alt="LAMP Learning" width='50' />
               </div>
             </div>
           }>
           <Switch>
+            <Redirect exact from="/" to="/home" />
+            <Route path="/CodeEditor" component={CodeEditor} />
             <Route
               path={[
-                '/',
                 '/home',
                 '/html',
                 '/Html_overview',
@@ -114,28 +117,7 @@ const Routes = () => {
                 '/Html_header',
                 '/Html_styleSheet',
                 '/Html_javascript',
-                '/Html_layouts',
-                '/Buttons',
-                '/Dropdowns',
-                '/NavigationMenus',
-                '/ProgressBars',
-                '/Pagination',
-                '/Scrollable',
-                '/Badges',
-                '/Icons',
-                '/UtilitiesHelpers',
-                '/Cards3',
-                '/Accordions',
-                '/Modals',
-                '/Notifications',
-                '/Popovers',
-                '/Tabs',
-                '/RegularTables1',
-                '/RegularTables4',
-                '/FormsControls',
-                '/ApexCharts',
-                '/Maps',
-                '/ListGroups'
+                '/Html_layouts'
               ]}>
               <LeftSidebar>
                 <Switch location={location} key={location.pathname}>
@@ -145,10 +127,6 @@ const Routes = () => {
                     exit="out"
                     variants={pageVariants}
                     transition={pageTransition}>
-                    <Route
-                      path="/"
-                      component={Home}
-                    />
                     <Route
                       path="/home"
                       component={Home}

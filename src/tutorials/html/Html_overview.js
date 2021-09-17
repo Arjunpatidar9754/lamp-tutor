@@ -1,6 +1,6 @@
 import { Grid } from '@material-ui/core';
 import React, { Fragment } from 'react';
-import CodeExamples, { CodeExamplesOutput } from '../CodeExamples/index';
+import CodeExamples, { CodeExamplesOutput, CodeExamplesShow } from '../CodeExamples/index';
 
 import { PageTitle } from '../../layout-components';
 import { Link } from 'react-router-dom';
@@ -164,7 +164,7 @@ export default function Html_overview() {
             <p>
               The DOCTYPE declaration tag is used by the web browser to understand the version of the HTML used in the document. Current version of HTML is 5 and it makes use of the following declaration −
             </p><br />
-            <CodeExamples value={`<!DOCTYPE html>`} />
+            <CodeExamplesShow value={`<!DOCTYPE html>`} />
             <p>
               There are many other declaration types which can be used in HTML document depending on what version of HTML is being used. We will see more details on this while discussing !DOCTYPE...> tag along with other HTML tags.
             </p><br />
@@ -173,7 +173,7 @@ export default function Html_overview() {
               <h2>HTML Document Structure</h2>
               <p>A typical HTML document will have the following structure −</p>
               <br />
-              <CodeExamples value={`<html> 
+              <CodeExamplesShow value={`<html> 
    <head>
       Document header related tags
    </head>  

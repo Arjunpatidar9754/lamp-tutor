@@ -13,16 +13,12 @@ const useStyles = makeStyles((theme) => ({
       
       
       borderRadius: '20px',
-      paddingLeft: '10px',
+      paddingLeft: '5px',
+      paddingRight: '5px',
       paddingTop: '10px',
       paddingBottom: '40px',
-      display: 'flex',
-      flexWrap: 'wrap',
-      '& > *': {
-        margin: theme.spacing(1),
-        width: theme.spacing(55),
-        height: theme.spacing(40),
-      },
+      
+    
     },
     courseHeading: {
       color: '#010d3d',
@@ -48,55 +44,72 @@ export default function Home() {
             <b>Learn "How To Code ?"</b></p>
           </Grid>
           <Grid item xs={12} sm={6}>
-            <img src={home_logo1} alt='group logo' />
+            <img src={home_logo1} alt='group logo' className="team_img" />
           </Grid>
         </Grid>
         
       </section>
       <section className='courseBg'>
         <h1 align="center" className={classes.courseHeading}>Our Courses</h1>
-        <div className={classes.root}>
-          <Link to='/html' className={classes.root}>
-            <Paper elevation={3} className="paper">
-              <br />
-              <h2 align='center'>&lt; HTML /&gt;</h2>
-              <p>This course contains easy to read <b>Documentation</b> with proper <b>Code Examples</b></p>
-              <p>We will also provide <b>Try it yourself</b> option.</p>
-            </Paper>
-          </Link>
+        <div align='center' className={classes.root}>
+          <Grid container spacing={4}>
+            <Grid item xs={12} sm={6}>
+              <Link to='/html' className={classes.root}>
+                <Paper elevation={3} className="paper">
+                  <br />
+                  <h2 align='center'>&lt; HTML /&gt;</h2>
+                  <p>This course contains easy to read <b>Documentation</b> <br />with proper <b>Code Examples</b></p>
+                  <p>We will also provide <b>Try it yourself</b> option.</p>
+                </Paper>
+              </Link>
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <Link to='/Css_intro' className={classes.root}>
+              <Paper elevation={3} className="paper">
+                <br />
+                <h2 align='center'>* CSS *</h2>
+                <p>This course contains easy to read <b>Documentation</b> <br />with proper <b>Code Examples</b></p>
+                <p>We will also provide <b>Try it yourself</b> option.</p>
+              </Paper>
+            </Link>
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <Link to='/Javascript_intro' className={classes.root}>
+                <Paper elevation={3} className="paper">
+                  <br />
+                  <h2 align='center'>{`{ JavaScript }`}</h2>
+                  <p>This course contains easy to read <b>Documentation</b> <br />with proper <b>Code Examples</b></p>
+                  <p>We will also provide <b>Try it yourself</b> option.</p>
+                </Paper>
+              </Link>
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <Link to='/C#_intro' className={classes.root}>
+                <Paper elevation={3} className="paper">
+                  <br />
+                  <h2 align='center'>C#</h2>
+                  <p>This course contains easy to read <b>Documentation</b> <br />with proper <b>Code Examples</b></p>
+                  <p>We will also provide <b>Try it yourself</b> option.</p>
+                </Paper>
+              </Link>
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <Link to='/C++_intro' className={classes.root}>
+                <Paper elevation={3} className="paper">
+                  <br />
+                  <h2 align='center'>C++</h2>
+                  <p>This course contains easy to read <b>Documentation</b> <br />with proper <b>Code Examples</b></p>
+                  <p>We will also provide <b>Try it yourself</b> option.</p>
+                </Paper>
+              </Link>
+            </Grid>
+          </Grid>
           
-          <Link to='/Css_intro' className={classes.root}>
-            <Paper elevation={3} className="paper">
-              <br />
-              <h2 align='center'>* CSS *</h2>
-              <p>This course contains easy to read <b>Documentation</b> with proper <b>Code Examples</b></p>
-              <p>We will also provide <b>Try it yourself</b> option.</p>
-            </Paper>
-          </Link>
-          <Link to='/Javascript_intro' className={classes.root}>
-            <Paper elevation={3} className="paper">
-              <br />
-              <h2 align='center'>{`{ JavaScript }`}</h2>
-              <p>This course contains easy to read <b>Documentation</b> with proper <b>Code Examples</b></p>
-              <p>We will also provide <b>Try it yourself</b> option.</p>
-            </Paper>
-          </Link>
-          <Link to='/C#_intro' className={classes.root}>
-            <Paper elevation={3} className="paper">
-              <br />
-              <h2 align='center'>C#</h2>
-              <p>This course contains easy to read <b>Documentation</b> with proper <b>Code Examples</b></p>
-              <p>We will also provide <b>Try it yourself</b> option.</p>
-            </Paper>
-          </Link>
-          <Link to='/C++_intro' className={classes.root}>
-            <Paper elevation={3} className="paper">
-              <br />
-              <h2 align='center'>C++</h2>
-              <p>This course contains easy to read <b>Documentation</b> with proper <b>Code Examples</b></p>
-              <p>We will also provide <b>Try it yourself</b> option.</p>
-            </Paper>
-          </Link>
+          
+          
+          
+          
+          
         </div>
       </section>
     </Fragment>
