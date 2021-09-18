@@ -296,10 +296,10 @@ export default function Html_attributes() {
       </div>
       <div>
           <Link to='/Html_elements'>
-            <span style={{padding: '7px 15px', borderRadius: '20px', backgroundColor: '#000a2e', color: 'white', fontWeight: 'bold'}}>Previous</span>
+            <span className="btn-prev">Previous</span>
           </Link> 
           <Link to='/Html_formatting' >
-          <span style={{margin: '2px 30vw', padding: '7px 15px', borderRadius: '20px', backgroundColor: '#000a2e', color: 'white', fontWeight: 'bold'}}>Next</span>
+          <span className="btn-next">Next</span>
           </Link>
       </div>
     </Fragment>

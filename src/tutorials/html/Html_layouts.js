@@ -52,10 +52,10 @@ export default function Html_layouts() {
       </div>
       <div>
           <Link to='/Html_overview'>
-            <span style={{padding: '7px 15px', borderRadius: '20px', backgroundColor: '#000a2e', color: 'white', fontWeight: 'bold'}}>Previous</span>
+            <span className="btn-prev">Previous</span>
           </Link> 
           <Link to='/Html_basicTags' >
-          <span style={{margin: '2px 30vw', padding: '7px 15px', borderRadius: '20px', backgroundColor: '#000a2e', color: 'white', fontWeight: 'bold'}}>Next</span>
+          <span style={{marginLeft: "25vw", padding: '10px 25px', borderRadius: '20px', backgroundColor: '#e9ebf2', color: '#6b6c6e', fontWeight: 'bold'}}>Next</span>
           </Link>
       </div>
     </Fragment>

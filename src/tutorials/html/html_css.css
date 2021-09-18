@@ -27,3 +27,19 @@
     border: 1px solid black;
     background-color: gray;
 }
+
+.btn-prev{
+    padding: 10px 25px;
+    border-radius: 20px;
+    background-color: #000a2e;
+    color: white;
+    font-weight: bold;
+}
+.btn-next{
+    margin-left: 25vw;
+    padding: 10px 25px;
+    border-radius: 20px;
+    background-color: #000a2e;
+    color: white;
+    font-weight: bold;
+}

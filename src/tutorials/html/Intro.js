@@ -4,6 +4,7 @@ import CodeExamples, { CodeExamplesOutput } from '../CodeExamples/index';
 
 import { PageTitle } from '../../layout-components';
 import { Link } from 'react-router-dom';
+import './html_css.css'
 
 
 export default function HtmlIntro() {
@@ -132,10 +133,10 @@ export default function HtmlIntro() {
       </div>
       <div>
           <Link>
-            <span style={{padding: '7px 15px', borderRadius: '20px', backgroundColor: '#e9ebf2', color: '#6b6c6e', fontWeight: 'bold'}}>Previous</span>
+            <span style={{padding: '10px 25px', borderRadius: '20px', backgroundColor: '#e9ebf2', color: '#6b6c6e', fontWeight: 'bold'}}>Previous</span>
           </Link> 
           <Link to='/Html_overview'>
-          <span style={{margin: '2px 30vw', padding: '7px 15px', borderRadius: '20px', backgroundColor: '#000a2e', color: 'white', fontWeight: 'bold'}}>Next</span>
+          <span className="btn-next">Next</span>
           </Link>
       </div>
     </Fragment>
